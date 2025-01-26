@@ -14,6 +14,16 @@ st.set_page_config(layout="wide")
 st.title('Test Streamlit V2')
 st.write('Hello World!')
 
+col1_1, col1_2 = st.column(2)
+with col1_1:
+    st.header("AAAAAA")
+    with col1_2:
+    st.header("BBBBBB")
+
+col2_1, col2_2 = st.column([3, 1], border=True)
+col2_1.header("CCCCCC")
+col2_2.header("DDDDDD")
+
 if st.button('Generate Random Number'):
     random_number = random.randint(1, 100)
     st.write(f'Random Number: {random_number}')
