@@ -10,6 +10,7 @@ Original file is located at
 import streamlit as st
 import random
 
+st.set_page_config(layout="wide")
 st.title('Test Streamlit V2')
 st.write('Hello World!')
 
